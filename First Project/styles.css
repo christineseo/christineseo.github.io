@@ -1,0 +1,103 @@
+h1{
+    color: rgb(59, 47, 24);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:80px;
+}
+h2{
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding:70px;
+    background-color: rgb(59, 47, 24);
+    margin-left:80px;
+    margin-right:80px;
+}
+
+h3{
+    color: rgb(59, 47, 24);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+p{
+    color: slategray;
+    line-height:20px;
+    letter-spacing: 1px;
+    margin-right:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: rgb(59, 47, 24);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top:40px;
+    padding-left:50px;
+  }
+  li {
+    display: inline;
+    padding: 14px;
+    padding-left: 40px;
+    color: rgb(59, 47, 24);
+  }
+  .container {
+    padding-top:40px;
+    margin-left:80px;
+    margin-right:80px;
+   }
+
+   .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .btn {
+    border: 2px solid rgb(59, 47, 24);
+    background-color: white;
+    color: rgb(59, 47, 24);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .default {
+    border-color: #e7e7e7;
+    color:rgb(59, 47, 24);
+  }
+  
+  .default:hover {
+    background: #e7e7e7;
+  }
+
+  .column {
+    float: right;
+    width: 33.33%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 47, 24);
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  input[type=radio]{
+    display:block;
+
+}
