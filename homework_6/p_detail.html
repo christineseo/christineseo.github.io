@@ -2,14 +2,15 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles_copy.css">
+    <script type="text/javascript" src="myScript.js"></script>
     <title>The Walnut</title>
     <ul>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="product.html">Products</a></li>
         <img src="img/search.png" style="margin-left:420px" alt="search bar">
         <img src="img/account.png" style="margin-left:20px" alt="account icon"> 
-        <img src="img/cart.png" style="margin-left:20px" alt="cart icon">
+        <img onclick="location.href = 'cart.html';" src="img/cart.png" style="margin-left:20px" alt="cart icon">
       </ul>
       <h2>The Walnut</h2>
 
@@ -18,8 +19,7 @@
 <body>
     <div class="row" style="margin-top:40px; padding-left: 80px">
         <div class="column">
-        <img src="img/bread1.png" style="width:80%;" alt="cinnamon bun 1">
-          <img src="img/bread1.png" style="width:20%;" alt="cinnamon bun 2">
+        <img id= "bread" src="img/bread1.png" style="width:80%;" alt="cinnamon bun 1">
     </div>
 
         <div class="column">
@@ -28,24 +28,24 @@
         <p style= "padding-right: 80px">Our favorite, The Walnut, consists of crunchy walnuts and cinnamon, mixed with sweet milk.</p>
         <br>
         <div class="dropdown">
-          <button class="dropbtn">Quanitity</button>
+          <button id= "amount" class="dropbtn">Quanitity</button>
           <div class="dropdown-content">
-            <a>1 roll</a>
-            <a>3 rolls</a>
-            <a>6 rolls</a>
-            <a>12 rolls</a>
+            <a onclick="one('1 roll')">1 roll</a>
+            <a onclick="one('3 rolls')"> 3 rolls</a>
+            <a onclick="one('6 rolls')">6 rolls</a>
+            <a onclick="one('12 rolls')"> 12 rolls</a>
           </div>
         </div>
         <br>
         <br>
         <br>
           <div class="dropdown">
-            <button class="dropbtn" style="margin-top: 30px;">Glaze</button>
+            <button class="dropbtn btn" data-toggle="dropdown" style="margin-top: 30px;" >Glaze</button>
             <div class="dropdown-content">
-              <a>None</a>
-              <a>Sugar-milk</a>
-              <a>Double-chocolate</a>
-              <a>Vanilla-milk</a>
+              <a onclick="none()"> None </a>
+              <a onclick="sugarmilk()"> Sugar Milk </a>
+              <a onclick="choc()"> Double Chocolate </a>
+              <a onclick="vanilla()"> Vanilla Milk </a>
             </div>
           </div>
         <br>
@@ -53,8 +53,7 @@
         <br>
         <br>
         <br>
-        <img src="img/add.png" alt="add to cart button">
-        <li><a href="cart.html">Add to cart</a></li>
+        <li><a href="cart.html" onclick="alert('Added to cart!')"><img src="img/add.png" alt="add to cart button"></a></li> 
     </div>
 </div>
 
