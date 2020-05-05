@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/animate.css">
+    <script src="assets/wow.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <span id ="brand">
+                <a href = "index.html"> CHRISTINE SEO</a>
+            </span>
+
+<!-- menu bar -->
+            <ul id="menu">
+                <li><a href="index.html">Work<span></span></a></li>
+                <li><a href="art.html">Art<span></span></a></li>
+                <li><a href="about.html">About<span></span></a></li>
+                <li><a href="https://static1.squarespace.com/static/5d20ccb64eaf340001d3d9a5/t/5e1f26a4181fbc46dcdcebae/1579099812855/Resume_Christine_M_Seo+.pdf">Resume<span></span></a></li>
+            </ul>
+
+            <div id="toggle">
+                <div class="span">Menu</div>
+    </div>
+
+        </nav>
+
+<!-- responsive menu bar -->
+        <div id="resize">
+            <div class ="close-btn">x</div>
+            <ul id = "menu">
+                <li><a href="index.html">Home<span>.</span></a></li>
+                <li><a href="art.html">Work<span>.</span></a></li>
+                <li><a href="about.html">About<span>.</span></a></li>
+                <li><a href="https://static1.squarespace.com/static/5d20ccb64eaf340001d3d9a5/t/5e1f26a4181fbc46dcdcebae/1579099812855/Resume_Christine_M_Seo+.pdf">Resume<span></span></a></li>
+            </ul>
+        </div>
+
+<!-- about content -->
+        <div class="whitespace"></div>
+        <br><br>
+        <img class= "wow fadeInUp" data-wow-delay="0.2s" src="assets/images/christine.jpg"style="width:100%">
+        <br><br><br>
+
+        <div class = "row">
+            <h3 class = "wow fadeInUp" data-wow-delay="0.3s"> About Me </h3>
+            <p class="wow fadeInUp" data-wow-delay="0.4s">I’m Christine from NYC, but currently based in Pittsburgh, attending Carnegie Mellon University. I am a junior pursuing a BFA in Visual Art with a double major in Human-Computer Interaction. </p>
+            <br>
+            <p class="wow fadeInUp" data-wow-delay="0.4s"> I have passion for not only designing mesmerizing human experiences, but also attending music festivals like Electric Zoo and Coachella. I’m also working as a UX designer for a startup company called BleuDot that a couple of my peers and I have started! I am currently looking for full time product design and UI/ UX positions!</p>
+            <br>
+            <p class="wow fadeInUp" data-wow-delay="0.4s"> Feel free to shoot me an email at: mseo1@andrew.cmu.edu </p>
+        </div>
+        <div class="whitespace"></div>
+
+<!-- footer -->
+    <div class="footer">
+        <div class="hr">
+            <div class="row"></div>
+          </div>
+
+          <br><br>
+
+          <div class="address" id="address">
+                <h5 class= "wow fadeInUp">Contact me</h5>
+                <h5 style="font-weight:200" class= "wow fadeInUp">mseo1@andrew.cmu.edu | 913.927.8342</p>
+                <br><br>
+                <h4 class= "wow fadeInUp" style="color:orange;font-style: italic;letter-spacing: 5px;">@CHRISTINE SEO 2020</h4>
+            </div>
+
+    <br><br><br>
+
+ <!-- javascript --> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation bar
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // nav bar animation
+      TweenMax.from("#brand", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      new WOW().init();
+      </script>
+</body>
+</html>
